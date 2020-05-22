@@ -1,0 +1,30 @@
+                <form>
+                    <div className="contact-fields">
+                        <div className="contact-fields1">
+                            <label><strong>Name:</strong></label><br />
+                            <input type="text" required /><br />
+                        </div>
+                    
+
+                        <div className="contact-fields1">
+                            <label><strong>Email:</strong></label><br />
+                            <input type="email" required /><br />
+                        </div>
+                    </div>
+
+                        <br />
+                        <label><strong>Message:</strong></label><br />
+                        <textarea cols="60" rows="10" id="message" required></textarea>
+                    
+                </form>
+
+                
+
+                <button type="submit">SUBMIT</button>
+
+
+
+
+                    display: flex;
+    justify-content: center;
+    

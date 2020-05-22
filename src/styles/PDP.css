@@ -1,0 +1,44 @@
+.pdp-page{
+    display: flex;
+    justify-content: center;
+
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.pdp-container{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.pdp-wrapper-options{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .pdp-wrapper-info{
+    display: flex;
+    flex-direction: column;
+    
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+} */
+
+
+
+.pdp-group1{
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.pdp-group1-options{
+    margin-right: 10px;
+}

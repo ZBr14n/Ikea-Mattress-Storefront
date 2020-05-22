@@ -1,0 +1,71 @@
+            // compare curr user selection with what's already in context store.
+            if(context[0][uniqueID]===context[1][uniqueID] && context[0][pdpUserOption]===context[1][pdpUserOption]){
+                context[0]["count"] += 1
+            }             
+            // else{
+            //     context[0]["count"] = 1
+            // } 
+
+
+
+
+=======================================
+
+// check whether the same item id and size has already been added or not
+    const handleDupeItems = (contextStore, ItemPrice, ItemName, count) => {
+        let auxStore = []
+        let auxIndex = -1
+       
+        // we want to update the cart if when user selects same item, but different size.
+
+        contextStore.forEach(item => {
+            
+            let index = auxStore.findIndex(entry => entry.uniqueID === item.uniqueID && entry.pdpUserOption === item.pdpUserOption)         
+                                                
+            if(index === -1){                
+                // if no matching values are found, continue pushing to auxStore
+                auxStore.push({uniqueID: item.uniqueID, pdpUserOption: item.pdpUserOption, ItemPrice: item.ItemPrice, ItemName: item.ItemName, count: 1})
+            }         
+            // get first matching elem found
+            auxIndex = index                                   
+        })
+        // console.log(auxStore[auxIndex])
+        // auxStore[auxIndex].push({uniqueID: uniqueID, pdpUserOption: pdpUserOption, ItemPrice: ItemPrice, ItemName: ItemName, count: count+1})
+                
+        return auxStore               
+    }
+
+    const handleContext = () => {
+        let ItemPrice = matchSizePrice(pdpUserOption)
+        let ItemName = mattress[id].name
+                
+        let newContext = []
+        
+        // capture uniqueID to incr the count for specific item.
+        
+
+        // record user selection and push it to global store
+        context.push({uniqueID, pdpUserOption, ItemPrice, ItemName, count})
+                
+        
+        if(context.length >= 2){                                    
+            // compare curr user selection with what's already in context store.
+            if(context[0][uniqueID]===context[1][uniqueID] && context[0][pdpUserOption]===context[1][pdpUserOption]){
+                context[0]["count"] += 1
+            }             
+            // else{
+            //     context[0]["count"] = 1
+            // }      
+        }   
+
+        // filter for any duplicates when theres is 2 or more items.
+        newContext = handleDupeItems(context, ItemPrice, ItemName, 1)
+
+        setContext(null)
+        setContext(newContext)        
+        
+        
+        console.log(newContext)
+        
+
+    }

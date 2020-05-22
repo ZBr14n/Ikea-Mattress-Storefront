@@ -1,0 +1,29 @@
+.checkout-address-container{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.checkout-wrapper{
+    display: flex;
+    /* padding: 50px; */
+}
+.review-wrapper{
+    display: flex;
+}
+
+
+
+.order-summary{
+    padding-right: 50px;
+}
+
+
+/* .payment-details{
+    display: flex;
+} */
+
+.review-details{
+    /* display: flex; */
+    /* flex-direction: column; */
+}

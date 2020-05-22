@@ -1,0 +1,24 @@
+.about-sect{
+    max-width: 1000px;
+    margin: 0 auto;
+    font-size: 1.5em;
+
+    padding-top: 5%;
+    padding-bottom: 10%;
+}
+
+/* .aboutImage{
+    margin-right: 30px;
+}
+.aboutStory{
+    padding: 30px;
+} */
+#ingvar{
+    max-width: 250px;
+    float: left;
+    margin-right: 20px;
+}
+
+#ikea-map{
+    max-width: 1000px;
+}

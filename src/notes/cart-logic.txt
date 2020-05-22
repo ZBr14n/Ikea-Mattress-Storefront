@@ -1,0 +1,93 @@
+// let shipping = sumSubtotal < 1000 && sumSubtotal !== 0 ? 150.00: 0.00;
+    // let totalShipping = sumSubtotal + shipping
+
+    // let taxes = sumSubtotal * .045
+    // let formatTaxes = '$' + taxes.toFixed(2).replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,")
+    
+    // let total = taxes + totalShipping
+    // let formatTotal = '$' + total.toFixed(2).replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,")
+
+    // shipping = sumSubtotal < 1000 && sumSubtotal !== 0 ? "$150.00" : "Free"
+
+
+    // update quantity, then re-adjust totals
+    // const handleUpdate = (ItemPrice) => {
+        
+    //     let subtotal = refCount.current.value * Number((ItemPrice).replace(/[^\d.]/g, ''))
+    //     setItemSubtotal(subtotal)
+        
+    // }
+
+
+
+
+==================================
+
+how to incr. item quantity based on clicks
+of the same item???
+
+if user clicks the button for that item,
+check to see if it has already been displayed
+on the cart page. If so incr. count
+
+
+==============================
+
+
+
+
+    // create function to get unique numbers and how many duplicates -->
+    const getUnique = (uniqueNums) => {
+        // uniqueNums = uniqueNums.sort(entry => entry.uniqueID)
+
+        // after the array is sorted by id, store using new array and check if there is any dupe sizes that we can disregard.
+        let filterSize = []
+        uniqueNums.forEach(item => {
+            let index = filterSize.findIndex(entry => entry.pdpUserOption === item.pdpUserOption)
+            if(index <= -1){
+                filterSize.push({uniqueID: item.uniqueID, pdpUserOption: item.pdpUserOption})
+            }            
+        })
+        
+        console.log(filterSize)
+    }
+
+
+
+
+context.length > 1 && context.uniqueID ? entry.count+1 : entry.count
+
+
+
+==================================================
+
+What does the cart page have?
+
+Track the number of times that the use select the same item as well as diff item.
+The same item can be clicked multiple times,
+
+
+
+How do we populate the list of items in the cart?
+App #1: since we declared a global variable, we can recording and push user selection
+and store it in an array (includes going back and clicking the same or diff product)
+
+- get unique items that the user picked from the cart.
+- populate using map()
+- quantity should reflect unique items bought
+
+
+
+
+
+
+
+
+
+
+Cart Icon:
+-cart should record user selection count and hold a list of unique items within a global array (useContext)
+
+
+Continue shopping button
+Checkout button

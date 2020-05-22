@@ -1,0 +1,14 @@
+.cart-container{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-bottom: 10%;
+    padding-top: 2.5%;
+}
+
+tbody{
+    font-size: 1.3em;
+}
+
+.order-totals{
+    font-size: 1.3em;
+}

@@ -1,0 +1,51 @@
+    // create function to get unique numbers and how many duplicates -->
+    const getUnique = (uniqueNums) => {
+        let unique = uniqueNums.map(entry => parseInt(entry.uniqueID));
+        let uniqueSet = new Set(unique)
+        console.log(uniqueSet)
+    }
+    // if same unique id, but different size --> display as separate.
+    const getDupe = ()
+
+=============================================
+
+if(context.length >= 2){
+            getIndex = context.map(function(entry) {return entry.uniqueID; }).indexOf(auxID);
+
+            if(context[getIndex].uniqueID === auxID){
+                context.pop()
+            }
+        }
+
+        console.log(context)
+
+
+========================================================================================================        
+
+
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    
+    flex-direction: column;
+
+
+
+
+if(context[context.length-1].uniqueID===getIndex){            
+            // context.pop()
+            console.log(context)
+        }
+
+        
+
+        console.log(typeof(context[context.length-1].uniqueID))
+        console.log(typeof(getIndex))
+        console.log(context[context.length-1].uniqueID)
+        console.log(getIndex)
+

@@ -1,0 +1,20 @@
+#receipt-link{
+    pointer-events: none;
+}
+
+.checkout-container{
+    padding-bottom: 10%;
+}
+
+.checkout-nav{
+    max-width: 1000px;
+    margin: 0 auto;
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+
+/* .checkout-container{
+
+} */

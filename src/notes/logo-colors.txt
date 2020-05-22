@@ -1,0 +1,5 @@
+yellow:
+ Hex Color: #FFDA1A;
+
+blue:
+Hex Color: #0051ba;
