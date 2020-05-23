@@ -4,6 +4,7 @@ Ikea storefront implemented with HTML, CSS, React.js (Context API and React-Rout
 ### 5/22/2020:
 Finally deployed live with many bugs fixed. This is a full featured e-commerce website with complete checkout process.
 
+http://ikea-mattress-storefront.surge.sh/
 
 
 ### Things to add and improve on:
