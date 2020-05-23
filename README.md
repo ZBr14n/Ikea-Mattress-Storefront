@@ -8,9 +8,9 @@ http://ikea-mattress-storefront.surge.sh/
 
 
 ### Things to add and improve on:
--Make the storefront responsive on mobile device (iPhone 6 at the least).
--Add user authentication (OAuth or JWT perhaps) for user account creation and login.
--Add backend service using nodejs/mysq to hold incoming data.
+- Make the storefront responsive on mobile device (iPhone 6 at the least).
+- Add user authentication (OAuth or JWT perhaps) for user account creation and login.
+- Add backend service using nodejs/mysq to hold incoming data.
 
 
 -----------------------------------------------------
