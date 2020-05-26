@@ -12,9 +12,9 @@ export default function Receipt() {
                 <h3>PURCHASE COMPLETE</h3>
              
                 <div className="receipt-page-wrapper">
-                    <img src="/images/ikea-logo.jpg" width="180px" /><br />
+                    <img style={{paddingTop:'50px'}} src="/images/ikea-logo.jpg" width="180px" /><br />
 
-                    <h5>Thank you for your purchase!
+                    <h5 style={{paddingTop:'50px'}}>Thank you for your purchase!
                     Your products will be arriving in 3-5 business days.
                     Please print your receipt for your records</h5>
                 </div><br /><br />
@@ -30,10 +30,10 @@ export default function Receipt() {
                         </div>
 
                         <div className="receipt-right">
-                            <div>{totalContext[0]}</div>
-                            <div>{totalContext[1]}</div>
+                            <div>{'$' + totalContext[0]}</div>
+                            <div>{'$' + totalContext[1]}</div>
                             <div>{totalContext[2]}</div><br />
-                            <div><strong>{totalContext[3]}</strong></div>
+                            <div><strong>{'$' + totalContext[3]}</strong></div>
                         </div>
                     </div>
                 </div><br /><br />

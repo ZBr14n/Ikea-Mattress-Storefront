@@ -12,7 +12,7 @@
     align-items: right;
     justify-content: center;
     max-width: 1000px;
-    justify-content: space-between;
+    justify-content: space-evenly;
     
 }
 

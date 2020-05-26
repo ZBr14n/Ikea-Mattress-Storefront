@@ -132,7 +132,7 @@ function Cart() {
                                                         {/* <button id="remove-item-b" onClick={()=>handleRemove(key)}>REMOVE</button> */}
                                                     </div>
                                                 </td>
-                                                <td>{entry.count === 1 ? entry.ItemPrice : entry.ItemSubtotal}</td>
+                                                <td>{entry.count === 1 ? entry.ItemPrice : '$' + entry.ItemSubtotal}</td>
                                             </tr>
                                                                             
                                         </>
@@ -146,14 +146,14 @@ function Cart() {
                 </div>
 
 
-                <div className="order-totals">
+                <div className="order-totals" style={{paddingBottom:'50px'}}>
                         <div className="totals">                        
                             {/* update totals again only if user clicks the update button; consider using ternary conditional render to decide it. */}
-                            <p>Subtotal: {subtotal}</p>                                            
+                            <p>Subtotal: {'$' + subtotal}</p>                                            
                             <p>Shipping: {handleShipping(subtotal) === 0.00 ? "Free" : "$150.00"} </p>
                             <p>Taxes (4.5%): {handleTaxes(subtotal)} </p>
                         </div>    
-                        <strong>Total: {handleGrandTotal(subtotal,handleShipping(subtotal),handleTaxes(subtotal))}</strong>
+                        <strong>Total: {'$' + handleGrandTotal(subtotal,handleShipping(subtotal),handleTaxes(subtotal))}</strong>
 
                 </div> 
                 

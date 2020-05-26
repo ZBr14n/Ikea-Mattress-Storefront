@@ -5,7 +5,7 @@ export default function About() {
     return (
         <div className="about-sect">
             <div className="aboutImage">
-                <img src="/images/ingvar.jpg" width="100%" id="ingvar" alt="ingvar" />
+                <img src="/images/Ingvar.jpg" width="100%" id="ingvar" alt="Ingvar" />
             </div>
             <div className="aboutStory">
                 <p>
