@@ -1,11 +1,25 @@
 # Ikea-Mattress-Storefront
-Ikea storefront implemented with HTML, CSS, React.js (Context API and React-Router specifically)
+Ikea e-ecommerce storefront implemented with HTML, CSS, React.js (Context API for global state handling and React-Router for site navigation specifically). Other libraries used include react-bootstrap and styled-components CSS styles and layout structure.
+
+### Live Demo:
+https://ikea-mattress-storefront.netlify.app/
+
+
+
+# How to run this in localhost for testing:
+- Download the zip file for this projoect.
+- Extract it to your local desktop/document folder.
+- Navigate to the extracted folder's root directory.
+- Copy the address of the folder.
+- Open command prompt and do 'cd [address_name]'
+- Enter 'npm install' and wait until it finishes.
+- Enter 'npm start' to start the project in localhost:3000/
+
+
+
 
 ### 5/22/2020:
 Finally deployed live with many bugs fixed. This is a full featured e-commerce website with complete checkout process.
-
-https://ikea-mattress-storefront.netlify.app/
-
 
 ### Things to add and improve on:
 - Make the storefront responsive on mobile device (iPhone 6 at the least).
